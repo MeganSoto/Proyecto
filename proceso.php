@@ -1,9 +1,25 @@
 <?php
- $valor1= $_POST['n1'];
- $valor2= $_POST['n2'];
-
-  echo "El total de la Suma es:".($valor1 + $valor2);
+ $Valor1=$_POST['n1'];
+ $Valor2=$_POST['n2'];
+ $Operacion=$_POST['operacion'];
+ $resultado;
+ 
   
-
-
+  if($Operacion =='suma')
+  {
+   $resultado=($Valor1 + $Valor2);
+  }
+   if($Operacion == 'resta')
+  {
+  $resultado=($Valor1 - $Valor2);
+  }
+   if($Operacion == 'multiplicación')
+  {
+  $resultado=($Valor1 * $Valor2);
+  }
+   if($Operacion == 'división')
+  {
+  $resultado=($Valor1 / $Valor2);
+  }
+ 
 ?>

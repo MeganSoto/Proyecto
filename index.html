@@ -1,32 +1,30 @@
-ï»¿<!DOCTYPE html>
-
 <html>
 <head>
-   
-    <title>PÃ¡gina 1</title>
+
+    <title>Página 1</title>
 </head>
 <body>
-    <div align ="center">
+    <div align="center">
         <h1>Operaciones</h1>
     </div>
 
     <div align="center">
-        <form method="post" action="proceso.php">
-            <label for="n1">Primer Valor </label>
-            <input type="text" name="n1" id="n1" placeholder=" Ingrese un nÃºmero" />
+        <form method="POST" action="proceso.php">
+            <label for="n1">Valor 1</label>
+            <input type="text" name="n1" id="n1" placeholder=" Ingrese un valor" />
             <br /> <br />
-            <label for="n2">Segundo Valor </label>
-            <input type="text" name="n2" id="n2" placeholder=" Ingrese un nÃºmero" />
+            <label for="n2">Valor 2 </label>
+            <input type="text" name="n2" id="n2" placeholder=" Ingrese un valor" />
             <br /> <br />
-                   <select name="operacion">
-                       <option value="suma">suma</option>
-                       <option value="resta">resta</option>
-                       <option value="multiplicaciÃ³n">multiplicaciÃ³n</option>
-                       <option value="divisiÃ³n">divisiÃ³n</option>
+            <select name="operacion">
+                <option value="suma">suma</option>
+                <option value="resta">resta</option>
+                <option value="multiplicación">multiplicación</option>
+                <option value="división">división</option>
 
-                   </select>
+            </select>
             <br />  <br />
-            <input type="submit" value="Calcular" />
+            <input type="submit" name="Calcular" value="Calcular" />
         </form>
     </div>
 </body>
